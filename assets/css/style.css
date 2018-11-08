@@ -153,6 +153,14 @@ body {
     overflow: auto;
   }
   
+  /* #Mushroom:hover{
+
+    background-image: url(../images/Mushroom_Jumping.gif);
+
+    height: 274px;
+    width: 274px; 
+    opacity: 1; */
+/* } */
   .work:nth-child(even) {
     margin-right: 40px;
   }
