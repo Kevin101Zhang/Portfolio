@@ -152,15 +152,16 @@ body {
     margin: 20px 0 25px;
     overflow: auto;
   }
-  
-  /* #Mushroom:hover{
-
-    background-image: url(../images/Mushroom_Jumping.gif);
-
+  #Mushroom{
+    background-image: url(../images/OrangMushroom.JPG);
     height: 274px;
     width: 274px; 
-    opacity: 1; */
-/* } */
+  }
+  #Mushroom:hover {
+    background-image: url(../images/Mushroom_Jumping.gif);
+    height: 274px;
+    width: 274px; 
+}
   .work:nth-child(even) {
     margin-right: 40px;
   }
