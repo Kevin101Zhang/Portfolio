@@ -4,24 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Kevin Zhang's Responsive Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
 
 <body>
 
-  <header id="HeaderContainer">
-    <div class="container">
-      <a href="index.html" id="logo">Kevin Zhang</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <header id="HeaderContainer">
+    
+        <div class="container">
+          <a href="index.html" id="logo">Kevin Zhang</a>
+          <div onclick="openNav()"><i class="fas fa-bars hamburger"></i></div>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="link" href="index.html">About</a>
+            <a class="link" href="portfolio.html">Portfolio</a>
+            <a class="link" href="contact.html">Contact</a>
+          </div>
+    
+        </div>
+      </header>
 
   <div id="main-container" class="container">
     <section class="main-section">
@@ -71,13 +76,21 @@
         </a>
       </div>
 
-      <!-- <div class="work">
+      <div class="work">
         <a href="https://kevin101zhang.github.io/TriviaGame/">
-          <img src="assets/images/Minions.png" alt="Trivia Game">
+          <img src="assets/images/nodelogo.png" alt="Trivia Game">
 
-          <h3>Node</h3>
+          <h3>Hangman In Node</h3>
         </a>
-      </div> -->
+      </div>
+
+      <div class="work">
+        <a href="https://pacific-ocean-86624.herokuapp.com/landingpage.html">
+          <img src="assets/images/aTrueFoodie.png" alt="A True Foodi">
+
+          <h3>ATrueFoodi</h3>
+        </a>
+      </div>
 
       <div class="work">
         <a href="https://glacial-forest-82436.herokuapp.com/survey">
@@ -86,11 +99,6 @@
           <h3>Friend Finder Survery</h3>
         </a>
       </div>
-
-
-
-
-
 
 
     </section>
@@ -102,6 +110,15 @@
       Copyright &copy;
     </div>
   </footer>
+  <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "360px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
 </body>
 
 </html>

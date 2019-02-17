@@ -4,22 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <title>About | Your Name</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
-
     <header id="HeaderContainer">
+    
     <div class="container">
       <a href="index.html" id="logo">Kevin Zhang</a>
-      <nav>
+      <div onclick="openNav()"><i class="fas fa-bars hamburger"></i></div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a class="link" href="index.html">About</a>
         <a class="link" href="portfolio.html">Portfolio</a>
         <a class="link" href="contact.html">Contact</a>
-      </nav>
+      </div>
+
     </div>
   </header>
 
@@ -27,7 +32,7 @@
     <section class="main-section">
       <h1>About Me</h1>
 
-      <img src="assets/images/KevinZhang.png" class="auth-image" alt="Your Name">
+      <img src="./assets/images/coming_soon.jpg" class="auth-image" alt="Your Name">
 
       <p>
         A Full stacks Developer, with a specialization in the backend. For me, the story of humans is a story of ideas, ergo, a healthy disregard for the impossible and a need for exploration is a must.</p>
@@ -45,6 +50,17 @@
       Copyright &copy; 
     </div>
   </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "360px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 </body>
 
 </html>
+
